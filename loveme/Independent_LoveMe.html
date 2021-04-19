@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Webcomics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../navbar.css">
+<link rel="stylesheet" href="../text.css">
+<body style="font-size: 30px; text-align: center;">
+    <div class="navbar">
+        <a href="../index.html"><img src="../img/SK_logo2.png" width="81" height="45.6"> </a> 
+        <a href="../about.html" style="font-size: 40px;">About</a> 
+        <a href="../portfolio.html" style="font-size: 40px;">Portfolio</a>
+       <a href="../Collections/index.html" style="font-size: 40px;">Collections</a>
+       <a href="../shop.html" style="font-size: 40px;">Shop</a>
+       <a href="../contact.html" style="font-size: 40px;">Contact</a>
+      </div>
+      <br  id="anchor1">
+      <p style="font-size: 80px; margin-bottom: 0px;"><i>Love, Me</i></p>
+      <img src="comicbook3.jpg" style="width: 35%;">
+    <br>
+    <br>
+    <div style="margin-right: 10%; margin-left: 10%;">
+      <p>"It's okay to not be okay." That is something that is not said enough. <i>Love, Me</i> is Sydney Kit's way of representing that phrase through illustrations.</p>
+    <p><i>Love, Me</i> serves as a collection of short comics that share advice and personal stories from friends and family. Each comic tackles subject such as depression,
+      sexuality, deaf awareness, and more, in hopes that others can find comfort in relatability.</p>
+      <br>
+      <img src="comicbook2.jpg" style="width: 25%; margin-right: 10px"><img src="comicbook6.jpg" style="width: 25%; margin-left: 10px">
+    <br>
+    <br>
+      <p style="font-size: 50px;">How It Started</p>
+<p><i>Love, Me</i> started off as a semester-long project for <a href="osu_Webcomics.html">Webcomics</a> and has continued into a larger series.</p>
+</div>
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="comicbook1.jpg" style="width:70%; margin-left: 15%;">
+  <img class="mySlides" src="comicbookinside1.jpg" style="width:70%; margin-left: 15%;">
+  <img class="mySlides" src="comicbookinside2.jpg" style="width:70%; margin-left: 15%;">
+  <img class="mySlides" src="comicbookinside3.jpg" style="width:70%; margin-left: 15%;">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<br>
+<p style="font-size: 50px;">About the Comic Book</p>
+<p>Copies of <i>Love, Me Volume One</i> are available at the <a href="../shop.html">shop</a>.<br>Digital Access to the comic can be accessed by clicking <a href="../loveme/access.html">here.</a></p>
+<img src="comicfan5.jpg" style="width: 12.5%; margin-right: 2.5%;"><img src="comicfan4.jpg" style="width: 13%;margin-right: 2.5%;"><img src="comicfan2.jpg" style="width: 10%;margin-right: 2.5%;"><img src="comicfan1.jpg" style="width: 10%; margin-right: 2.5%;"><img src="comicfan3.jpg" style="width: 13%;margin-right: 2.5%;"><img src="comicfan6.jpg" style="width: 11.5%;">
+<br>
+<br>
+<br>
+<p style="font-size: 50px;">Want to share your own advice?</p>
+<p>Send Sydney Kit an <a href="mailto:kit.frank.art@gmail.com">email</a> with the subject "Love, Me Advice Submission"</p>
+
+<br>
+<br>
+<p><a href="#anchor1">Back To Top</a></p></div>
+</body>
+</html>

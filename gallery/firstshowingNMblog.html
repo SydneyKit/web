@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Blog</title>
+<style>  @font-face {
+        font-family: SydType;
+        src: url(img/Sydtype-Regular.otf);
+     }
+     
+     @font-face {
+        font-family: SydType;
+        src: url(img/Sydtype-Regular.otf);
+        font-weight: bold;
+     }
+     * {
+        font-family: SydType;
+        font-size: larger;
+     }
+     .rotate90 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+a:link
+{text-decoration: none;
+color: black;}
+a:visited{color:black;}
+     </style>  
+</head>
+<body style="font-size: 30px;">
+     <div style="text-align: center;">
+    <p style="font-size: 50px;"><b>First Showing Blog</b></p>
+     <p>New Media</p>
+     </div>
+     <hr>
+     <p>
+Well, it's been a long journey and it's almost to an end now. The trashcan is all painted, the recyclable items are all painted, the strings are all attached, and the code is ... well the code is still not working... but hey, progress has been made! I have a current code that moves the motors clockwise and counterclockwise and I have a code that triggers the photo resistor. It's the combining them that's the issue now.
+<br>
+FOR THE MOTORS
+<br>
+<br>
+#include < AccelStepper.h > 
+<br>
+<br>
+// Define a stepper and the pins it will use
+<br>
+<br>
+AccelStepper stepper; // Defaults to AccelStepper::FULL4WIRE (4 pins) on 2, 3, 4, 5
+<br>
+<br>
+void setup()
+<br>
+<br>
+{  
+    <br>
+  // Change these to suit your stepper if you want
+  <br>
+  stepper.setMaxSpeed(100);
+  <br>
+  stepper.setAcceleration(20);
+  <br>
+  stepper.moveTo(500);
+  <br>
+}
+<br>
+<br>
+void loop()
+<br>
+{ 
+    <br>
+    // If at the end of travel go to the other end
+    <br>
+    if (stepper.distanceToGo() == 0)
+    <br>
+      stepper.moveTo(-stepper.currentPosition());
+      <br>
+      <br>
+    stepper.run();
+    <br>
+}
+<br>
+<br>
+FOR THE PHOTORESISTOR (this turns a second LED on, which will be replaces by the motors in the final code)
+<br>
+<br>
+const int sensorPin = A0;
+<br>
+const int ledPin = 9;
+<br>
+// We'll also set up some global variables for the light level a calibration value and
+<br>
+//and a raw light value
+<br>
+int lightCal;
+<br>
+int lightVal;
+<br>
+<br>
+<br>
+void setup()
+<br>
+{
+    <br>
+  // We'll set up the LED pin to be an output.
+  <br>
+  Serial.begin(9600);
+  <br>
+  pinMode(ledPin, OUTPUT);
+  <br>
+  lightCal = analogRead(sensorPin);
+  <br>
+  //we will take a single reading from the light sensor and store it in the lightCal
+  <br>
+  //variable. This will give us a prelinary value to compare against in the loop
+  <br>
+}
+<br>
+<br>
+<br>
+void loop()
+<br>
+{
+    <br>
+  //Take a reading using analogRead() on sensor pin and store it in lightVal
+  <br>
+  lightVal = analogRead(sensorPin);
+  <br>
+  Serial.println(lightVal);
+  <br>
+  <br>
+  <br>
+  //if lightVal is less than our initial reading (lightCal) minus 50 it is dark and
+  <br>
+  //turn pin 9 HIGH. The (-50) part of the statement sets the sensitivity. The smaller
+  <br>
+  //the number the more sensitive the circuit will be to variances in light.
+  <br>
+  if (lightVal < lightCal - 50)
+  <br>
+      {
+        <br>
+        <br>
+        <br>
+      digitalWrite(9, HIGH);
+      <br>
+      Serial.println("LIGHT ON");
+      <br>
+      delay(10000);
+      <br>
+      }
+      <br>
+      <br>
+      <br>
+  //else, it is bright, turn pin 9 LOW
+  <br>
+  else
+  <br>
+    {
+        <br>
+      Serial.println("DARK");
+      <br>
+    digitalWrite(9, LOW);
+    <br>
+    }
+    <br>
+}
+<br>
+<br>
+It was time to focus on the code and the code only. After several different ways to mash the two together and multiple break downs, a code was FINALLY WORKING! And when I say tears were streaming ... TEARS WERE STREAMING! It was crazy to think that at the beginning of the semester I didn't know how to code anything and now I have this code that works that I WROTE (or I at least pieced together).
+<br>
+<br>
+The photoresistor was finally setting off the motors and the motors were finally turning the way they needed to! The final code still needs some tweaks, but it works! A week ago I thought this project was a lost cause, but now the light is at the end of the tunnel!
+</p>
+</body>
+</html>

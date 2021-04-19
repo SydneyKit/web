@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  position: fixed;
+}
+
+
+#container {
+  height: 40%;
+  width: 100%;
+  margin-top:150px;
+  margin-left:0;
+  margin-right:0;
+  position:relative;
+  filter: url(#goo);
+}
+#container .text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-30%, -60%);
+  font-family: LoveMe;
+  font-size: 200px;
+  z-index: 999;
+  color: #F4C134;
+}
+#container .drop {
+  height: 30px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #F4C134;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(120%, -800%) scaleX(0.5);
+  animation: move 6s cubic-bezier(1, 0.04, 0.74, 0.2) infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-110%, -800%) scaleX(0.2);
+    height: 60px;
+  }
+  30% {
+    transform: translate(-550%, -275%);
+    height: 30px;
+    width: 20px;
+  }
+  70% {
+    transform: translate(-550%, -125%);
+    height: 30px;
+    width: 20px;
+  }
+  100% {
+    transform: translate(-225%, 800%) scaleX(0.2);
+    height: 60px;
+  }
+}
+@font-face {
+  font-family: LoveMe;
+  src: url(../files/LoveMeFont-Regular.otf);
+}
+
+@font-face {
+  font-family: LoveMe;
+  src: url(../files/LoveMeFont-Regular.otf)
+}
+* {
+  font-family: LoveMe;
+}
+
+.yellow {
+  background-color: #F4C134;
+  color: black;
+  padding: 2%;
+}
+.black {
+  background-color: black;
+  color:#F4C134
+}
+
+
+
+
+.parallax {
+  position:fixed; 
+  z-index: 99999;
+  width:500px;
+}
+
+.parallax img {
+  width: 100%;
+}
