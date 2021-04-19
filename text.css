@@ -1,0 +1,25 @@
+@font-face {
+    font-family: SydType;
+    src: url(img/Sydtype-Regular.otf);
+ }
+ @font-face {
+    font-family: SydType;
+    src: url(img/Sydtype-Regular.otf);
+    font-weight: bold;
+ }
+ * {
+    font-family: SydType;
+ }
+ b:link{
+    text-decoration: none;
+    color: #c32fd6}
+
+ b:visited{
+    color:#c32fd6}
+
+    a:link{
+      text-decoration: none;
+      color: black}
+  
+   a:visited{
+      color:black}
