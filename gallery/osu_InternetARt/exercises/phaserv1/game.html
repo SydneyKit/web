@@ -2,15 +2,18 @@
 <html lang="en"> 
 <head> 
     <meta charset="UTF-8" />
-    <title>Making your first Phaser 3 Game - Part 10</title>
+    <title>
+        Mime Prototype
+    </title>
     <script src="//cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
+    <link rel="stylesheet" href="../../../../text.css">
     <style type="text/css">
         body {
             margin: 0;
         }
     </style>
 </head>
-<body>
+<body style="font-size: 30px;">
 
 <script type="text/javascript">
 
@@ -45,10 +48,13 @@ var game = new Phaser.Game(config);
 
 function preload ()
 {
-    this.load.image('sky', 'assets/sky.png');
-    this.load.image('ground', 'assets/platform.png');
-    this.load.image('star', 'assets/star.png');
-    this.load.image('bomb', 'assets/bomb.png');
+    this.load.image('sky', 'assets/background.png');
+    this.load.image('ground', 'assets/floor.png');
+    this.load.image('star', 'assets/coins.png');
+    this.load.image('bomb', 'assets/onionring.png');
+    this.load.image('shelf', 'assets/shelf.png');
+    this.load.image('table', 'assets/table.png');
+    this.load.image('counter', 'assets/countertop.png');
     this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 });
 }
 
@@ -65,9 +71,9 @@ function create ()
     platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
     //  Now let's create some ledges
-    platforms.create(600, 400, 'ground');
-    platforms.create(50, 250, 'ground');
-    platforms.create(750, 220, 'ground');
+    platforms.create(600, 400, 'table');
+    platforms.create(125, 250, 'counter');
+    platforms.create(750, 220, 'shelf');
 
     // The player and its settings
     player = this.physics.add.sprite(100, 450, 'dude');
@@ -202,6 +208,6 @@ function hitBomb (player, bomb)
 }
 
 </script>
-
+<p><a href="mimeprotoype.html">Return to the Homepage</a></p>
 </body>
 </html>

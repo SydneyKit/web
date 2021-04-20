@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../../../text.css">
+  <link rel="stylesheet" href="../../../../navbar.css">
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+    <script style="text-align: center;">
+        var config = {
+            type: Phaser.AUTO,
+            width: 800,
+            height: 600,
+            physics: {
+                default: 'arcade',
+                arcade: {
+                    gravity: { y: 200 }
+                }
+            },
+            scene: {
+                preload: preload,
+                create: create
+            }
+        };
+    
+        var game = new Phaser.Game(config);
+    
+        function preload ()
+        {
+    
+            this.load.image('sky', 'assets/titlescreen.png');
+            this.load.image('logo', 'assets/mimetitle.png');
+            this.load.image('red', 'assets/coins.png');
+        }
+    
+        function create ()
+        {
+            this.add.image(400, 300, 'sky');
+    
+            var particles = this.add.particles('red');
+    
+            var emitter = particles.createEmitter({
+                speed: 100,
+                scale: { start: 1, end: 0 },
+                blendMode: 'ADD'
+            });
+    
+            var logo = this.physics.add.image(400, 100, 'logo');
+    
+            logo.setVelocity(100, 200);
+            logo.setBounce(1, 1);
+            logo.setCollideWorldBounds(true);
+    
+            emitter.startFollow(logo);
+        }
+        </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="../../../../index.html"><img src="../../../../img/SK_logo2.png" width="81" height="45.6"> </a> 
+        <a href="../../../../about.html" style="font-size: 40px;">About</a> 
+        <a href="../../../../portfolio.html" style="font-size: 40px;">Portfolio</a>
+       <a href="../../../../gallery/index.html" style="font-size: 40px;">Collections</a> 
+       <a href="../../../../shop.html" style="font-size: 40px;">Shop</a>
+       <a href="../../../../contact.html" style="font-size: 40px;">Contact</a>
+      </div>
+      <br>
+<p style="font-size: 65px; margin-bottom: 0px;">Mime Protype Game Home Screen</p>
+<p style="font-size: 20px;">
+    <span style="padding: 0px 20px;"><a href="game.html">Play the Game</a></span>
+    <span style="padding: 0px 20px;">Collect as much money as you can without eating the onion rings!</a></span>
+    <span style="padding: 0px 20px;"><a href="../index.html">Return to Exercises & Projects</a></span>
+</p>  
+
+
+</body>
+</html>
