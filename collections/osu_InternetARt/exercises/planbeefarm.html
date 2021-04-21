@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plan Bee Farm</title>
+  <link rel="stylesheet" href="planbeefarm.css">
+  <style>
+    .box{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            justify-content: space-evenly;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .box > div {
+            padding: 100px;
+        }
+        .specialbox{
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            margin-left: 390px;
+        }
+        .center{
+            display:block;
+           margin-left: auto;
+           margin-right: auto;
+           width: 60%;
+        }
+    .navbar {
+      overflow: hidden;
+      background-color: #F4C134;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+      top: 0;
+      width: 100%;
+      z-index: 500;
+      height: min-content;
+    
+    }
+    .navbar a {
+  float: none;
+  display: inline-block;
+  color: black;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 60px;
+  vertical-align: middle;
+}
+
+.navbar a:hover {
+  background: black;
+  color: #F4C134;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  height: 1500px;
+}
+@font-face {
+   font-family: LoveMe;
+   src: url(../files/LoveMeFont-Regular.otf);
+}
+
+@font-face {
+   font-family: LoveMe;
+   src: url(../files/LoveMeFont-Regular.otf)
+}
+* {
+   font-family: LoveMe;
+}
+a:link{text-decoration: none;}
+a:visited{color:white;}
+
+.navbar a:visited{
+  color:black
+}
+  </style>
+
+</head>
+
+<body>
+  <div class="navbar">
+      <div style="float: left; padding: 10px;">
+  <img src="../files/beelogo_menu.png" width="100px"> 
+  </div>
+  <div style="float: right; padding: 20px;">
+  <a href="#" style="font-size: 30px;">Beekeeping Equipment</a>
+  <a href="#" style="font-size: 30px;">Blog</a> 
+  <a href="#" style="font-size: 30px;">Geocache</a>
+  <a href="#" style="font-size: 30px;">Nues</a>
+ <a href="#" style="font-size: 30px;">Queen</a> 
+ <a href="#" style="font-size: 30px;">Videos</a> 
+  <a hred="#" style="font-size: 30px">   </a>
+ <a href="#" style="font-size: 30px;">Store</a> 
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="parallax">
+    <img src="../../files/honeycomb.png" style="width: 52%; margin-left: 245%;">
+  </div>
+  <div class="parallax">
+    <img src="../../files/honeycomb1.png" style="width: 60%;">
+  </div>
+<svg>
+  <defs>
+    <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="name"/>
+      <feColorMatrix in="name" mode="matrix" values="1 0 0 0 0
+                                                     0 1 0 0 0
+                                                     0 0 1 0 0
+                                                     0 0 0 15 -10" result="b"/>
+
+      <feBlend in="SourceGraphic" in2="b" />
+    </filter>
+  </defs>
+</svg>
+
+<div class="wrapper">
+  
+  <div id="container">
+    <p class="text">Plan Bee Farm</p>
+    <div class="drop"></div>
+  </div>
+</div>
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<div style="font-size: 50px; text-align: center;"> 
+   <img src="../files/OCB_logo1_fifteenthdraft_forest_withand.jpg" style="width: 70%; padding-left: 0%;">
+   <br>
+   <br>
+<div class="black">
+  <br>
+   <p style="font-size: 100px; color: #F4C134;">About Plan Bee Farms</p>
+   <br>
+<div class="yellow">
+<div class="box" style="align-items: center;"> <img src="../files/OCB_logo1_fifteenthdraft.jpg" style="width: 30%;">
+    <p>Plan Bee Farms is located in Adamsville, OH and is owned by Julie and Glenn Nestor.</p>
+</div>
+</div>
+<br>
+<div class="box" style="align-items: center;">
+     <p>Natural, local honey products are for sale in our <a href="#"> shop</a>.</p>
+     <img src="../files/honey.jpg" style="width: 40%;">
+ </div>   
+ <br>
+ <div class="yellow">
+ <div class="box" style="align-items: center;"> <img src="../files/beekeeper.jpg" style="width: 40%;">
+    <p>Want to start your own bee farm? Let us help! Visit our <a href="#">Beekeeping Equipment</a> page.</p>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="black" style="text-align: center;">
+  <br>
+  <p style="font-size: 30px;">Owned by Julie and Glenn Nestor. Created by Sydney Kit.</p>
+  <br>
+  <br>
+</div>
+
+</body>
+</html>

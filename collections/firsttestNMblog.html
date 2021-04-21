@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final Blog</title>
+<style>  @font-face {
+        font-family: SydType;
+        src: url(img/Sydtype-Regular.otf);
+     }
+     
+     @font-face {
+        font-family: SydType;
+        src: url(img/Sydtype-Regular.otf);
+        font-weight: bold;
+     }
+     * {
+        font-family: SydType;
+        font-size: larger;
+     }
+     .rotate90 {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+a:link
+{text-decoration: none;
+color: black;}
+a:visited{color:black;}
+     </style>  
+</head>
+<body style="font-size: 30px;">
+     <div style="text-align: center;">
+    <p style="font-size: 50px;"><b>First Tests Blog</b></p>
+     <p>New Media</p>
+     </div>
+     <hr>
+     <p>
+The start of the coding and building of the project began with an empty trash can, 1/8 in plywood boards, and (too many) recyclable items. I started off with painting the trash can with the images that are revealed after a can is inserted. Since the recyclable items are pulled up with stepper motor, wheels were needed for the strings to gather once pulled up. Thanks to TradeMark Gunderson (http://trademarkg.com) who already had an Adobe Illustrator file for the wheels, I was able to laser cut a wheel for each stepper motor. It took a bit of time to find the right settings with speed and power (shown below), but the perfect settings were finally found.
+<br>
+<br>
+<br>
+<br>
+<br>
+Once the wheels were made and all the parts were ordered, the coding began. It didn't come easy... I had never coded or worked with code before. After several (million) error messages 
+<br>
+<br>
+and help from three computer scientists (Brendan, Micah, and Tom) and TradeMark, my code was finally working!
+<br>
+The photoresistor watches the white light and waits for the can (or my hand in this video) to pass through to tell the motors (or the green light) to go. It started off with telling the motors to work for 2 seconds.
+<br>
+Once that code was refined it was edited to go off for 10 seconds. The final code, however, will be long enough for the recyclable items to go up, pause, and then go back down, so it will be closer to 1 1/2 - 2 minutes.
+<br>
+<br>
+Now that the code can start, it was time to work on the motors. Unfortunately, as of right now the motors still do not want to work with me. We went through 4 different codes, 3 different motors, and we are still unable to move the wheel clockwise, pause, then counterclockwise. As of right now, it is still uncertain if the issue is with the code or the motors themselves. The original code moved the wheels, but only in one direction and with no pause,
+<br>
+The original motor running on the 4th code. The motor was humming but the wheel was not moving.
+<br>
+The second motor working on the original code. The motor hummed, turned off, then hummed again, with no wheel movement.
+<br>
+<br>
+Photo resistor
+<br>
+<br>
+// As usual, we'll create constants to name the pins we're using.
+<br>
+// This will make it easier to follow the code below.
+<br>
+const int sensorPin = A0;
+<br>
+const int ledPin = 9;
+<br>
+// We'll also set up some global variables for the light level a calibration value and
+<br>
+//and a raw light value
+<br>
+int lightCal;
+<br>
+int lightVal;
+<br>
+<br>
+<br>
+void setup()
+<br>
+{
+    <br>
+  // We'll set up the LED pin to be an output.
+  <br>
+  Serial.begin(9600);
+  <br>
+  pinMode(ledPin, OUTPUT);
+  <br>
+  lightCal = analogRead(sensorPin);
+  <br>
+  //we will take a single reading from the light sensor and store it in the lightCal
+  <br>
+  //variable. This will give us a prelinary value to compare against in the loop
+  <br>
+}
+<br>
+<br>
+<br>
+void loop()
+<br>
+{
+    <br>
+  //Take a reading using analogRead() on sensor pin and store it in lightVal
+  <br>
+  lightVal = analogRead(sensorPin);
+  <br>
+  Serial.println(lightVal);
+  <br>
+  <br>
+  <br>
+  //if lightVal is less than our initial reading (lightCal) minus 50 it is dark and
+  <br>
+  //turn pin 9 HIGH. The (-50) part of the statement sets the sensitivity. The smaller
+  <br>
+  //the number the more sensitive the circuit will be to variances in light.
+  <br>
+  if (lightVal < lightCal - 50)
+  <br>
+      {
+        <br>
+      digitalWrite(9, HIGH);
+      <br>
+      delay(10000);
+      <br>
+      }
+      <br>
+      <br>
+      <br>
+  //else, it is bright, turn pin 9 LOW
+  <br>
+  else
+  <br>
+    {
+        <br>
+    digitalWrite(9, LOW);
+    <br>
+    }
+    <br>
+}
+<br>
+<br>
+Motor Test 1
+<br>
+<br>
+#define STEPPER_PIN_1 9
+<br>
+#define STEPPER_PIN_2 10
+<br>
+#define STEPPER_PIN_3 11
+<br>
+#define STEPPER_PIN_4 12
+<br>
+<br>
+int step_number = 0;
+<br>
+int n = 0;
+<br>
+<br>
+void setup() {
+    <br>
+    <br>
+ Serial.begin(9600);
+ <br>
+ <br>
+ <br>
+pinMode(STEPPER_PIN_1, OUTPUT);
+<br>
+pinMode(STEPPER_PIN_2, OUTPUT);
+<br>
+pinMode(STEPPER_PIN_3, OUTPUT);
+<br>
+pinMode(STEPPER_PIN_4, OUTPUT);
+<br>
+<br>
+OneStep(true);
+<br>
+}
+<br>
+<br>
+void loop()
+<br>
+{}
+<br>
+<br>
+void OneStep(bool dir){
+    <br>
+ //   if(dir){
+    <br>
+switch(step_number){
+    <br>
+  case 0:
+  <br>
+  digitalWrite(STEPPER_PIN_1, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 1:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 2:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 3:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, HIGH);
+  <br>
+  break;
+  <br>
+    case 4:
+    <br>
+  digitalWrite(STEPPER_PIN_1, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 5:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 6:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 7:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, HIGH);
+  <br>
+  break;
+  <br>
+  <br>
+ step_number++;
+ <br>
+  if(n == 10){
+    <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  }
+  <br>
+  <br>
+  <br>
+  <br>
+} 
+<br>
+//  }else{
+    <br>
+    switch(step_number){
+        <br>
+  case 0:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, HIGH);
+  <br>
+  break;
+  <br>
+  case 1:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+    case 2:
+    <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 3:
+  <br>
+  digitalWrite(STEPPER_PIN_1, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+   case 4:
+   <br>
+  digitalWrite(STEPPER_PIN_1, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 5:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 6:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, HIGH);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  break;
+  <br>
+  case 7:
+  <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, HIGH);
+  <br>
+  break;
+  <br>
+  Serial.println(n);
+  <br>
+  n++;
+  <br>
+} 
+<br>
+//  }
+<br>
+<br>
+<br>
+step_number++;
+<br>
+  if(n == 10){
+    <br>
+  digitalWrite(STEPPER_PIN_1, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_2, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_3, LOW);
+  <br>
+  digitalWrite(STEPPER_PIN_4, LOW);
+  <br>
+  }
+  <br>
+  <br>
+  else if(step_number > 3){
+    <br>
+    step_number = 0;
+    <br>
+  }
+  <br>
+  <br>
+}
+<br>
+<br>
+Motor Test 2
+<br>
+<br>
+#include < Stepper.h >
+    <br>
+    <br>
+const int stepsPerRevolution = 2076;  // change this to fit the number of steps per revolution
+<br>
+// for your motor
+<br>
+<br>
+// initialize the stepper library on pins 8 through 11:
+<br>
+Stepper myStepper(stepsPerRevolution, 6, 9, 10, 11);
+<br>
+<br>
+int stepCount = 0;         // number of steps the motor has taken
+<br>
+int steps = 1;
+<br>
+void setup() {
+    <br>
+  myStepper.setSpeed(15);
+  <br>
+  // initialize the serial port:
+  <br>
+  Serial.begin(9600);
+  <br>
+  myStepper.step(-stepsPerRevolution);
+  <br>
+}
+<br>
+<br>
+void loop() {
+    <br>
+  bool right = true;
+  <br>
+  // step one step:
+  <br>
+  while(right){
+    <br>
+    for(int i=0;i< stepsPerRevolution;i++){
+        <br>
+      myStepper.step(steps);
+      <br>
+       Serial.print("steps:");
+       <br>
+       Serial.println(stepCount);
+       <br>
+       stepCount++;
+       <br>
+    }
+    <br>
+  right = false;
+  <br>
+  delay(2000);
+  <br>
+  }
+  <br>
+  while(!right){
+    <br>
+    for(int i=0;i< stepsPerRevolution;i++){
+        <br>
+       myStepper.step(-steps);
+       <br>
+       Serial.print("steps:");
+       <br>
+       Serial.println(stepCount);
+       <br>
+       stepCount--;
+       <br>
+    }
+    <br>
+    delay(2000);
+    <br>
+    right = true;
+    <br>
+  }
+  <br>
+}
+<br>
+<br>
+Motor Test 3
+<br>
+<br>
+#include < Stepper.h>
+<br>
+<br>
+const int stepsPerRevolution = 200;  // change this to fit the number of steps per revolution
+<br>
+// for your motor
+<br>
+<br>
+// initialize the stepper library on pins 8 through 11:
+<br>
+Stepper myStepper(stepsPerRevolution, 9, 10, 11, 12);
+<br>
+<br>
+int stepCount = 0;         // number of steps the motor has taken
+<br>
+<br>
+void setup() {
+    <br>
+  // initialize the serial port:
+  <br>
+  Serial.begin(9600);
+  <br>
+}
+<br>
+<br>
+void loop() {
+    <br>
+  // step one step:
+  <br>
+  myStepper.step(1);
+  <br>
+  Serial.print("steps:");
+  <br>
+  Serial.println(stepCount);
+  <br>
+  stepCount++;
+  <br>
+  delay(500);
+  <br>
+}
+<br>
+<br>
+Motor Test 4
+<br>
+<br>
+#include < Stepper.h>
+<br>
+const int stepsPerRevolution = 2048;  // change this to fit the number of steps per revolution
+<br>
+// for your motor
+<br>
+<br>
+// initialize the stepper library on pins 8 through 11:
+<br>
+Stepper myStepper(stepsPerRevolution, 8, 9, 10, 11);
+<br>
+<br>
+int stepCount = 0;         // number of steps the motor has taken
+<br>
+int steps = 1;
+<br>
+void setup() {
+    <br>
+  myStepper.setSpeed(30);
+  <br>
+  // initialize the serial port:
+  <br>
+  Serial.begin(9600);
+  <br>
+}
+<br>
+<br>
+void loop() {
+    <br>
+  myStepper.step(1);
+  <br>
+  }
+  <br>
+</p>
+</body>
+</html>
