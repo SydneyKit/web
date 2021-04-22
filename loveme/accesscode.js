@@ -18,8 +18,7 @@ $(document).ready(function() {
         var inputText = e.target.value;
         if (inputText.toLowerCase() == "ozzie help")  {
             location.href = "loveme1.html";
-        } else if (inputText.toLowerCase() == "special topics") {
-            location.href = "loveme1.html";}  
+        } 
         else if (inputText.toLowerCase() == "ozzie story") {
         location.href = "loveme2.html";} 
     }
