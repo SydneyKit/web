@@ -7,10 +7,6 @@ body {
     font-size: 50px;
     color: #000;
   }
-  @font-face {
-     font-family: SydType;
-     src: url(../../files/Sydtype-Regular.otf);
-  }
   header {
     background-color: #fff;
     padding: 0;

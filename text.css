@@ -10,6 +10,12 @@
  * {
     font-family: SydType;
  }
+ .text {
+    font-size: 30px;
+ }
+ .navbartext{
+    font-size: 40px
+ }
  
    a:link{
       text-decoration: underline;
@@ -21,3 +27,48 @@
       text-decoration-color: #BBD5F2;
       color: black}
    
+      @media only screen and (max-width: 600px) {
+         .text{font-size: 15px;}
+       }
+       
+       /* Small devices (portrait tablets and large phones, 600px and up) */
+       @media only screen and (min-width: 600px) {
+         .text{font-size: 20px;}
+       }
+       
+       /* Medium devices (landscape tablets, 768px and up) */
+       @media only screen and (min-width: 768px) {
+         .text{font-size: 25px;}
+       } 
+       
+       /* Large devices (laptops/desktops, 992px and up) */
+       @media only screen and (min-width: 992px) {
+         .text{font-size: 30px;}
+       } 
+       
+       /* Extra large devices (large laptops and desktops, 1200px and up) */
+       @media only screen and (min-width: 1200px) {
+         .text{font-size: 35px;} }
+
+         @media only screen and (max-width: 600px) {
+            .navbartext{font-size: 25px;}
+          }
+          
+          /* Small devices (portrait tablets and large phones, 600px and up) */
+          @media only screen and (min-width: 600px) {
+            .navbartext{font-size: 30px;}
+          }
+          
+          /* Medium devices (landscape tablets, 768px and up) */
+          @media only screen and (min-width: 768px) {
+            .navbartext{font-size: 35px;}
+          } 
+          
+          /* Large devices (laptops/desktops, 992px and up) */
+          @media only screen and (min-width: 992px) {
+            .navbartext{font-size: 40px;}
+          } 
+          
+          /* Extra large devices (large laptops and desktops, 1200px and up) */
+          @media only screen and (min-width: 1200px) {
+            .navbartext{font-size: 45px;} }
