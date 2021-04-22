@@ -10,16 +10,14 @@
  * {
     font-family: SydType;
  }
- b:link{
-    text-decoration: none;
-    color: #c32fd6}
-
- b:visited{
-    color:#c32fd6}
-
-    a:link{
-      text-decoration: none;
+ 
+   a:link{
+      text-decoration: underline;
+      text-decoration-color: #BBD5F2;
       color: black}
   
    a:visited{
-      color:black}
+      text-decoration: underline;
+      text-decoration-color: #BBD5F2;
+      color: black}
+   
