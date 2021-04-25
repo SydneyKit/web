@@ -11,11 +11,17 @@
     font-family: SydType;
  }
  .text {
-    font-size: 30px;
+    padding: 0%;
  }
- .navbartext{
-    font-size: 40px
+ .headertext{
+  padding: 0%;
  }
+ .titletext{
+  padding: 0%;
+}
+.navtext{
+  padding:0%
+}
  
    a:link{
       text-decoration: underline;
@@ -27,48 +33,79 @@
       text-decoration-color: #BBD5F2;
       color: black}
    
-      @media only screen and (max-width: 600px) {
-         .text{font-size: 15px;}
+      /* Regular Text */
+     @media only screen and (max-width: 600px) {
+         .text{font-size: 20px;}
        }
        
        /* Small devices (portrait tablets and large phones, 600px and up) */
        @media only screen and (min-width: 600px) {
-         .text{font-size: 20px;}
+         .text{font-size: 25px;}
        }
        
        /* Medium devices (landscape tablets, 768px and up) */
        @media only screen and (min-width: 768px) {
-         .text{font-size: 25px;}
+         .text{font-size: 30px;}
        } 
        
        /* Large devices (laptops/desktops, 992px and up) */
        @media only screen and (min-width: 992px) {
-         .text{font-size: 30px;}
+         .text{font-size: 35px;}
        } 
        
        /* Extra large devices (large laptops and desktops, 1200px and up) */
-       @media only screen and (min-width: 1200px) {
-         .text{font-size: 35px;} }
+        @media only screen and (min-width: 1200px) {
+         .text{font-size: 40px;} }
+
+
+         /* Headers */
 
          @media only screen and (max-width: 600px) {
-            .navbartext{font-size: 25px;}
+          .headertext{font-size: 30px;}
           }
           
           /* Small devices (portrait tablets and large phones, 600px and up) */
-          @media only screen and (min-width: 600px) {
-            .navbartext{font-size: 30px;}
+        @media only screen and (min-width: 600px) {
+          .headertext{font-size: 35px;}
           }
           
           /* Medium devices (landscape tablets, 768px and up) */
-          @media only screen and (min-width: 768px) {
-            .navbartext{font-size: 35px;}
+        @media only screen and (min-width: 768px) {
+          .headertext{font-size: 40px;}
           } 
           
           /* Large devices (laptops/desktops, 992px and up) */
-          @media only screen and (min-width: 992px) {
-            .navbartext{font-size: 40px;}
+        @media only screen and (min-width: 992px) {
+          .headertext{font-size: 45px;}
           } 
           
           /* Extra large devices (large laptops and desktops, 1200px and up) */
           @media only screen and (min-width: 1200px) {
-            .navbartext{font-size: 45px;} }
+            .headertext{font-size: 50px;} }
+
+
+
+            /* Page Titles */
+          
+            @media only screen and (max-width: 600px) {
+              .titletext{font-size: 60px;}
+            }
+            
+            /* Small devices (portrait tablets and large phones, 600px and up) */
+          @media only screen and (min-width: 600px) {
+            .titletext{font-size: 65px;}
+            }
+            
+            /* Medium devices (landscape tablets, 768px and up) */
+          @media only screen and (min-width: 768px) {
+              .titletext{font-size: 70px;}
+            } 
+            
+            /* Large devices (laptops/desktops, 992px and up) */
+          @media only screen and (min-width: 992px) {
+              .titletext{font-size: 75px;}
+            } 
+            
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+              .titletext{font-size: 80px;} }

@@ -14,9 +14,8 @@
 float: none;
 display: inline-block;
 color: black;
-padding: 0px 16px;
+padding: 10px 15px 10px;
 text-decoration: none;
-font-size: 60px;
 vertical-align: middle;
 }
 
@@ -25,15 +24,39 @@ background: white;
 color: black;
 }
 
-.main {
-padding: 16px;
-margin-top: 30px;
-height: 1500px;
-}
+
 
 @media only screen and (max-width: 600px) {
-  .main {
-      padding: 6px;
-      height: 500px
-  }
+.navbar{
+  font-size: 25px;
+
 }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar{
+    font-size: 35px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar{
+    font-size: 45px;
+  }
+}  
+
+/* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+  .navbar{
+    font-size: 50px;
+  }
+ }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+  .navbar{
+    font-size: 55px;
+  }
+ }
