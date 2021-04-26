@@ -5,21 +5,30 @@
     <link rel="stylesheet" href="text.css">
     <link rel="stylesheet" href="navbar.css">
     <title>Portfolio</title>
-    </style>
+    <style>
+      .box{
+          display:flex;
+          flex-direction: row;
+          justify-content: center;
+          justify-content: space-evenly;
+          margin-left: 15%;
+          margin-right: 15%;
+      }
+      </style>
 </head>
-<body style="font-size: 30px; margin-left: 0px;">
+<body style="margin-left: 0px;">
   <div class="navbar">
-    <a href="index.html"><img src="img/SK_logo2.png" width="81" height="45.6"> </a> 
-    <a href="about.html" style="font-size: 40px;">About</a> 
-    <a href="portfolio.html" style="font-size: 40px;">Portfolio</a>
-   <a  href="collections/index.html" style="font-size: 40px;">Collections</a> 
-   <a href="shop.html" style="font-size: 40px;">Shop</a>
-   <a  href="contact.html" style="font-size: 40px;">Contact</a>
+    <a href="index.html"><img src="img/SK_logo2.png" width="100%"> </a> 
+    <a href="about.html">About</a> 
+    <a href="portfolio.html">Portfolio</a>
+   <a  href="collections/index.html">Collections</a> 
+   <a href="shop.html">Shop</a>
+   <a  href="contact.html">Contact</a>
   </div>
   <div style="margin-left: 10%; margin-right: 10%; text-align: center;">
   <br>
-  <p style="font-size: 100px; margin-bottom: 0px;">Portfolio</p>
-  <p style="font-size: 40px;">
+  <p style="margin-bottom: 0px;" class="titletext">Portfolio</p>
+  <p class="headertext">
     <span style="padding: 0px 20px;"><a href="#anchor1">Highlighted Work</a></span>
     <span style="padding: 0px 20px;"><a href="#anchor2"> Gallery Shows</a></span>
     <span style="padding: 0px 20px;"><a href="#anchor3"> Awards</a></span>
@@ -27,73 +36,88 @@
 </p>  
 <p>image or video here</p>
   <br id="anchor1">
-  <p style="font-size: 50px;">Highlighted Work</p>
+  <p class="headertext">Highlighted Work</p>
   <p>Gallery of highlighted work here</p>
   <br id="anchor2">
-  <p style="font-size: 50px;">Gallery Shows</p>
-  <p style="font-size: 35px;"><a href="https://u.osu.edu/canyouseemyscreen/">"Radicant Bodies" Online Gallery</a></p>
+  <p class="headertext">Gallery Shows</p>
+  <p class="text"><a href="https://u.osu.edu/radicantbodies/">The Ohio State Unversity Art & Technology Department <br>"Radicant Bodies" Online Gallery</a></p>
   <p style="font-size: 20px;">April 23, 2020-Current</p>
-  <a href="https://u.osu.edu/radicantbodies"><img src="img/Love,Me_pg11.png" width="25%"><br></a>
-  <a href="https://u.osu.edu/radicantbodies/"><video muted autoplay loop src="img/mimegame.mp4" width="35%"></video><br><img src="img/homescreen.JPG" width="40%"></a>
-  <p>Three works, A page from the <i>Love, Me</i> comic book, <i>Mime Game Prototype</i>, and my webstie's homepage, were featured in The Ohio State Universiry Art & Technology's online gallery show 
-    "Radicant Bodies" starting April 23, 2021.</p>
+  <div class="box";>
+    <a href="u.osu.edu/radicantbodies/"><img src="img/radicant-bodies.png" width="75%"></a>  
+  <p class="text">Three works, a page from the <i>Love, Me</i> comic book, <i>Mime Game Prototype</i>, and this website's homepage, were featured 
+    "Radicant Bodies" starting April 23, 2021.</p></div>
   <br>
-  <p>Visit Each Page: <span style="padding: 10px 20px;"><a href="loveme/Independent_LoveMe.html"><i>Love, Me</i></a></span><span style="padding: 10px 40px;"><a href="collections/osu_InternetARt/exercises/mime/protoype.html">Play the <i>Mime Game Prototype</i></a></span><a href="index.html">SydneyKit.com homepage</a></p>
+  <p class="text">Visit Each Page: <span style="padding: 10px 20px;"><a href="loveme/Independent_LoveMe.html"><i>Love, Me</i></a></span><span style="padding: 10px 40px;"><a href="collections/osu_InternetARt/exercises/mime/protoype.html">Play the <i>Mime Game Prototype</i></a></span><a href="index.html">SydneyKit.com homepage</a></p>
   <hr>
-  <p style="font-size: 35px;"><a href="https://www.instagram.com/buckeyecreativeconnection/">Columbus Spring Art Fest hosted by Buckeye Creative Connection</a></p>
+  <p class="text"><a href="https://www.instagram.com/buckeyecreativeconnection/">Columbus Spring Art Fest <br>hosted by Buckeye Creative Connection</a></p>
   <p style="font-size: 20px;">April 18, 2021</p>
-  <img src="img/IMG_1444.PNG" width="65%">
-  <p>Two works, <i>To Be Remembered</i> and <i>Wood Detail</i>, were featured in the Columbus Spring Art Fest on April 18th, 2021 at the 400 W Rich St Gallery in Columbus. The comic book <i>Love, Me</i> was also displayed on a pedestal near the two works.</p>
- <img src="img/IMG_1333.jpeg" style="width: 20%"> <img src="img/IMG_1325.jpeg" style="width: 20%"> <img src="img/IMG_1334.jpeg" style="width: 21.3%"> <img src="img/IMG_1331.jpeg" style="width: 20%">
- <p><i>To Be Remembered</i> won the audience choice award.</p> 
- <img src="img/IMG_1338.jpeg" style="width: 30%">
+  <div class="box";>  
+    <p class="text" style="margin-right: 5%;">Two works, <i>To Be Remembered</i> and <i>Wood Detail</i>, were featured at the 400 W Rich St Gallery in Columbus. The comic book <i>Love, Me</i> was also displayed on a pedestal near the two works.</p>
+    <img src="img/IMG_1444.PNG" width="45%"></div>
+    <br>
+ <img src="img/IMG_1333.jpeg" style="width: 15%"> <img src="img/IMG_1325.jpeg" style="width: 15%"> <img src="img/IMG_1334.jpeg" style="width: 15.9%"> <img src="img/IMG_1331.jpeg" style="width: 15%">
+<br>
+   <p class="text"><i>To Be Remembered</i> won the audience choice award.</p>
  <br>
- <p>Visit Each Page: <span style="padding: 10px 40px;"><a href="collections/osu_3DModeling.html"><i>To Be Remembered</i></a></span><span style="padding: 10px 40px;"><a href="collections/osu_Drawing.html"><i>Wood Detail</i></a></span><a href="loveme/Independent_LoveMe.html"><i>Love, Me</i></a></p>
+ <p class="text">Visit Each Page: <span style="padding: 10px 40px;"><a href="collections/osu_3DModeling.html"><i>To Be Remembered</i></a></span><span style="padding: 10px 40px;"><a href="collections/osu_Drawing.html"><i>Wood Detail</i></a></span><a href="loveme/Independent_LoveMe.html"><i>Love, Me</i></a></p>
  <hr>
-  <p style="font-size: 35px;"><a href="https://www.instagram.com/p/BvKftxAFf-g/">Buckeye Boundary Breakers Online Gallery</a></p>
+  <p class="text"><a href="https://www.instagram.com/p/CNYtHY5pc42/">Buckeye Boundary Breakers Online Gallery</a></p>
   <p style="font-size: 20px;">April 7, 2021</p>
-  <img src="img/comiconline.JPG" width="65%">
-  <p>A page from the comic book <i>Love, Me</i> was shown on the instagram account for the Buckeye Boundary Breakers. It featured the comic that discussed American Sign Language.</p>
- <br>
- <p>Visit The Page: <span style="padding: 25px 0px;"><a href="loveme/Independent_LoveMe.html"><i>Love, Me</i></a></span>
+  <div class="box";>  
+    <img src="img/bbblogo.JPG" width="25%">
+    <p class="text">The page that discussed American Sign Language (ASL) from the comic book <i>Love, Me</i> was featured.</p>
+  </div>
+ <p class="text">Visit The Page: <span style="padding: 25px 0px;"><a href="loveme/Independent_LoveMe.html"><i>Love, Me</i></a></span>
  <hr>
-  <p style="font-size: 35px;"><a href="https://u.osu.edu/canyouseemyscreen/">"Can You See My Screen?" Online Gallery</a></p>
+  <p class="text"><a href="https://u.osu.edu/canyouseemyscreen/">The Ohio State University Art & Technology Department<br>"Can You See My Screen?" Online Gallery</a></p>
   <p style="font-size: 20px;">December 4, 2020-Current</p>
-  <a href="https://u.osu.edu/canyouseemyscreen/3d-modeling-hirad-sab/"><img src="collections/files/3DM_borthrings_frontview.jpg" width="40%"><img src="collections/files/3DM_borthrings_sideview.jpg" width="40%"><br>
-  <img src="collections/files/la passion_le brassier (statue) front view.jpg" width="40%"><br></a>
-  <a href="https://u.osu.edu/canyouseemyscreen/computer-animation-tran-sab/"><img src="img/laneydayonline.JPG" width="40%"><img src="img/HMDISLNonline.JPG" width="40%"></a>
-  <p>Three works, the then named <i>Both Rings</i>, now named <i>To Be Remembered</i>, <i>A Laney Day</i> and <i>How Much Did I Sleep Last Night?</i>, were featured in The Ohio State Universiry Art & Technology's online gallery show 
-    "Can You See My Screen?" starting December 2020.</p>
-  <p><i>A Laney Day</i> is the first video shown on the "Animation- Tran & Sab" page.</p>
+  <div class="box";>  
+    <p class="text" style="margin-right: 5%;">Three works, the then named <i>Both Rings</i>, now named <i>To Be Remembered</i>, <i>A Laney Day</i> and <i>How Much Did I Sleep Last Night?</i>, were featured starting December 2020.</p>
+    <img src="img/canyousee.jpg" style="width: 30%;">
+  </div>
   <br>
-  <p>Visit Each Page: <span style="padding: 10px 20px;"><a href="collections/osu_3DModeling.html"><i>To Be Remembered (Both Rings)</i></a></span><span style="padding: 10px 40px;"><a href="collections/Independant_ALaneyDay.html"><i>A Laney Day</i></a></span><a href="collections/osu_3DAnimation.html"><i>How Much Did I Sleep Last Night?</i></a></p>
+  <p class="text">Visit Each Page: <span style="padding: 10px 20px;"><a href="collections/osu_3DModeling.html"><i>To Be Remembered (Both Rings)</i></a></span><span style="padding: 10px 40px;"><a href="collections/Independant_ALaneyDay.html"><i>A Laney Day</i></a></span><a href="collections/osu_3DAnimation.html"><i>How Much Did I Sleep Last Night?</i></a></p>
   <hr>
-  <p style="font-size: 35px;">Hopkins Hall Gallery</p>
+  <p class="text"><a href="https://www.facebook.com/events/470635543819151/">The 2020 Anatomy Fashion Show<br>Hosted by Phi Delta Epsilon OH Zeta at The Ohio State University</a></p>
+  <p style="font-size: 20px;">February 23, 2020</p>
+  <div class="box";>  
+    <img src="img/skeleton.JPG" style="width: 25%;">
+    <p class="text" style="margin-left: 5%;">Sydney Kit was one of the artists selected to paint a model for the fashion show that raised money for Nationwide Children's Hospital.
+    <br> This was an all day event that involved: getting the models into the suits, painting the respective system, getting the models to the fashion show, and then the walk.</p>
+  </div>
+  <br>
+  <p class="text">See More: <a href="https://www.instagram.com/p/B87JK18JQqx/">Instagram Post</a></p>
+  <hr>
+  <p class="text">Hopkins Hall Gallery</p>
   <p style="font-size: 20px;">April 2019 - December 2019</p>
-  <video muted autoplay loop src="img/IMG_1447.MP4" width="25%"></video><img src="img/IMG_1449.JPG" width="25%"><video muted autoplay loop src="img/IMG_1448.MP4" width="25%"></video>
-  <p>Two works, <i>Our Biggest Dream</i> and <i>Tongue Tower</i>, were featured in the Hopkins Hall Gallery during the 2019 summer and autumn semesters.</p>
-  <p><i>Our Biggest Dream</i> was shown on a big screen during the opening show and continued to be shown on a monitor in the hallway for the rest of the gallery show.</p>
+  <div class="box";>  
+    <p class="text" style="margin-right: 5%;">Two works, <i>Our Biggest Dream</i> and <i>Tongue Tower</i>, were featured in the Hopkins Hall Gallery during the 2019 summer and autumn semesters.<br>
+      <i>Our Biggest Dream</i> was shown on a big screen during the opening show and continued to be shown on a monitor in the hallway for the rest of the gallery show.</p>
+      <img src="img/hopkins.jpg" width="70%">
+    </div>
   <br>
-  <p>Visit Each Page: <span style="padding: 10px 40px;"><a href="collections/osu_MovingImage.html"><i>Our Biggest Dream</i></a></span><a href="collections/osu_3DModeling.html"><i>Tongue Tower</i></a></p>
+  <p class="text">Visit Each Page: <span style="padding: 10px 40px;"><a href="collections/osu_MovingImage.html"><i>Our Biggest Dream</i></a></span><a href="collections/osu_3DModeling.html"><i>Tongue Tower</i></a></p>
   <hr>
-  <p style="font-size: 35px;"><a href="https://www.instagram.com/p/BvKftxAFf-g/">APX Student Collective</a></p>
+  <p class="text"><a href="https://www.instagram.com/p/BvKftxAFf-g/">Alpha Rho Chi Student Collective</a></p>
   <p style="font-size: 20px;">April 2, 2019</p>
-  <img src="img/JFCF8517.JPG" width="25%">
-  <p>Two works, <i>Hockey Still Life</i> and <i>Replication Sunflowers</i>, were featured in the APX Student Collective. <br> This was Sydney Kit's first gallery show.</p>
+  <div class="box";>  
+    <img src="img/arc.JPG" style="width: 25%;">
+    <p class="text" style="margin-right: 5%;">Two works, <i>Hockey Still Life</i> and <i>Replication Sunflowers</i>, were featured. <br> This was Sydney Kit's first gallery show.</p>
+  </div>
  <br>
- <p>Visit Each Page: <span style="padding: 10px 40px;"><a href="collections/osu_Painting.html"><i>Hockey Still Life</i></a></span><a href="collections/osu_Painting.html"><i>Replication Sunflowers</i></a></p>
+ <p class="text">Visit Each Page: <span style="padding: 10px 40px;"><a href="collections/osu_Painting.html"><i>Hockey Still Life</i></a></span><a href="collections/osu_Painting.html"><i>Replication Sunflowers</i></a></p>
  <hr>
  <br id="anchor3">
- <p style="font-size: 50px;">Awards</p>
- <p style="font-size: 35px;">Audience Choice Award - Columbus Spring Art Fest</p>
- <p>Awarded April 18, 2021 to the <i>To Be Remembered</i> work.</p>
+ <p class="headertext">Awards</p>
+ <p class="text"><i>Audience Choice Award - Columbus Spring Art Fest</i></p>
+ <p class="text">Awarded April 18, 2021 to <i>To Be Remembered</i>.</p>
   <br>
- <p style="font-size: 35px;">The Fergus Material and Scholarships Fund</p>
- <p>Awarded March 24, 2021 for the publication of the <i>Love, Me</i> comic book.</p>
+ <p class="text"><i>The Fergus Material and Scholarships Fund</i></p>
+ <p class="text">Awarded March 24, 2021 for the publication of the <i>Love, Me</i> comic book.</p>
   <br id="anchor4">
-  <p style="font-size: 50px; margin-bottom: 0px;"><b>Resume</b></p>
- <p><a href="img/Sydney Kit Resume.pdf" download>Download 4/2021 Version</a></p>
- <p><a href="collections/osu_InternetARt/exercises/resume.html">Interactive Resume</a></p>
+  <p style="margin-bottom: 0px;" class="headertext"><b>Resume</b></p>
+ <p class="text"><a href="img/Sydney Kit Resume.pdf" download>Download 4/2021 Version</a></p>
+ <p class="text"><a href="collections/osu_InternetARt/exercises/resume.html">Interactive Resume</a></p>
  <br>
  <br>
  <br>
