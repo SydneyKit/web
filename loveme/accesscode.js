@@ -17,9 +17,9 @@ $(document).ready(function() {
     function checkInput(e) {
         var inputText = e.target.value;
         if (inputText.toLowerCase() == "ozzie help")  {
-            location.href = "loveme1.html";
+            location.href = "volume1.html";
         } 
-        else if (inputText.toLowerCase() == "ozzie story") {
-        location.href = "loveme2.html";} 
+        else if (inputText.toLowerCase() == "mars story") {
+        location.href = "volume2.html";} 
     }
 });
