@@ -19,6 +19,8 @@ $(document).ready(function() {
         if (inputText.toLowerCase() == "ozzie help")  {
             location.href = "volume1.html";
         } 
+        else if (inputText.toLowerCase() == "preview") {
+            location.href = "preview.html";} 
         else if (inputText.toLowerCase() == "mars story") {
         location.href = "volume2.html";} 
     }

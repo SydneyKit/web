@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<title>Webcomics</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="../text.css">
+<link rel="stylesheet" href="../navbar.css">
+
+<body style="font-size: 60px; text-align: center;">
+    <div class="navbar">
+        <a href="../index.html"><img src="../img/SK_logo2.png" width="81" height="45.6"> </a> 
+        <a href="../about.html" style="font-size: 40px;">About</a> 
+        <a href="../portfolio.html" style="font-size: 40px;">Portfolio</a>
+       <a href="../Collections/index.html" style="font-size: 40px;">Collections</a> 
+       <a href="../shop.html" style="font-size: 40px;">Shop</a>
+       <a href="../contact.html" style="font-size: 40px;">Contact</a>
+      </div>
+      <br>
+<p>Preview of <i>Love, Me</i> Volume 1 and 2</p>
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="../img/Love,Me_cover.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg1.2.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg5.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_Sloane_comicpage.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg6.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg7.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg8.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg9.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg10.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Love,Me_pg11.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Volume2_FrontPage1.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/meet_mars_ver1.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/mars_comic_pg1.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/mars_comic_pg2.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/mars_comic_pg3.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Chance_meetpage.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Chance_comicpage1.png" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/Chance_comicpage3.png" style="width:50%; margin-left: 25%">
+     <img class="mySlides" src="../img/Love,Me_bio.png" style="width:50%; margin-left: 25%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+</body>
+</html>
