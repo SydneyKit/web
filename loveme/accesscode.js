@@ -23,5 +23,7 @@ $(document).ready(function() {
             location.href = "preview.html";} 
         else if (inputText.toLowerCase() == "mars story") {
         location.href = "volume2.html";} 
+        else if (inputText.toLowerCase() == "mental health matters") {
+            location.href = "notalone.html";} 
     }
 });
