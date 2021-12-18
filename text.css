@@ -61,51 +61,51 @@
          /* Headers */
 
          @media only screen and (max-width: 600px) {
-          .headertext{font-size: 30px;}
+          .headertext{font-size: 25px;}
           }
           
           /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (min-width: 600px) {
-          .headertext{font-size: 35px;}
+          .headertext{font-size: 30px;}
           }
           
           /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {
-          .headertext{font-size: 40px;}
+          .headertext{font-size: 35px;}
           } 
           
           /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
-          .headertext{font-size: 45px;}
+          .headertext{font-size: 40px;}
           } 
           
           /* Extra large devices (large laptops and desktops, 1200px and up) */
           @media only screen and (min-width: 1200px) {
-            .headertext{font-size: 50px;} }
+            .headertext{font-size: 45px;} }
 
 
 
             /* Page Titles */
           
             @media only screen and (max-width: 600px) {
-              .titletext{font-size: 60px;}
+              .titletext{font-size: 40px;}
             }
             
             /* Small devices (portrait tablets and large phones, 600px and up) */
           @media only screen and (min-width: 600px) {
-            .titletext{font-size: 65px;}
+            .titletext{font-size: 45px;}
             }
             
             /* Medium devices (landscape tablets, 768px and up) */
           @media only screen and (min-width: 768px) {
-              .titletext{font-size: 70px;}
+              .titletext{font-size: 50px;}
             } 
             
             /* Large devices (laptops/desktops, 992px and up) */
           @media only screen and (min-width: 992px) {
-              .titletext{font-size: 75px;}
+              .titletext{font-size: 55px;}
             } 
             
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
-              .titletext{font-size: 80px;} }
+              .titletext{font-size: 60px;} }
