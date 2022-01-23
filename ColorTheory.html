@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>Color Theory</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../text.css">
+<link rel="stylesheet" href="../navbar.css">
+<link rel="stylesheet" href="../dropdown.css">
+
+<body style="text-align: center;">
+  <div class="navbar">
+    <a href="../index.html"><img src="../img/SK_logo2.png" width="100%" height="100%"> </a> 
+    <a href="../about.html">About</a> 
+    <a href="../portfolio.html">Portfolio</a>
+    <a href="../blog/index.html">Blog</a>
+   <a href="https://www.etsy.com/shop/SydneyKit?ref=search_shop_redirect">Shop</a>
+   <a href="../contact.html">Contact</a>
+  </div>
+      <br  id="anchor1">   <div style="margin-right: 5%; margin-left: 5%;">
+      <p class="titletext" style="margin-bottom: 0px; margin-top: 8%;"><i>Color Theory</i></p>
+     <video autoplay  muted looped src="files/ColorTheory_Intro_NoMusic.mp4" style="width: 25%; height: 25%;"></video>
+      <br>
+      <br>
+ 
+    <p class="headertext">About the Comic Series</p>
+      <p class="text"><i>Color Theory</i> is a continuing participatory art series that is comprised of weekly comics that are influenced by color palettes. Every week, Sydney Kit shares a new color palette with her audience and
+      invites them to share what it remind them of. The comics are then created based on those responses. To find out more, check out <a href="blog/color-theory-intro.html">the introduction blog</a>. </p>
+      <br>
+      <br>
+      <p class="headertext">See The Comics</p>
+      <br>
+
+  <!-- Start of the color palette dropdowns -->
+  <!-- Start of SK(Sydney Kit) Palette -->
+  <div class="SKContainer">
+    <div class="SKColor">
+      <img src="files/color palette.png" style="width: 50%; height: 50%;">
+      <button id="dropdownSK" onclick="SKShow()">See The Comics</button>
+    </div>
+    <div class="SKHidden">
+      <p class="text"><i>Cotton Candy Fields</i></p>
+      <img src="files/CT_SK_CottonCandyFields_watermark.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>The Cherry Blossom's Friends</i></p>
+      <img src="files/cherryblossomcomic.jpg" style="width: 50%; height: 50%;">
+      <p class="text"><i>Daydreaming</i></p>
+      <img src="files/CT_SK_linen.jpg" style="width: 75%; height: 75%;">
+      <button id="closeSK" onclick="SKHide()">Hide The Comics</button>
+    </div>
+  </div>
+
+  <!-- Start of the FC(Florida Citrus) Palette -->
+  <div class="FCContainer">
+    <div class="FCColor">
+      <img src="files/floridacritruspalette.jpg" style="width: 50%; height: 50%;">
+      <button id="dropdownFC" onclick="FCShow()">See The Comics</button>
+    </div>
+    <div class="FCHidden">
+      <p class="text"><i>Bowser's Halloween</i></p>
+      <img src="files/CT_SK_bowser_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>Sports Around The World</i></p>
+      <img src="files/CT_FC_sports_facebook.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>The Harvest</i></p>
+      <img src="files/CT_FC_harvest_full.jpg" style="width: 75%; height: 75%;">
+      <button id="closeFC" onclick="FCHide()">Hide The Comics</button>
+    </div>
+  </div>
+
+  <!-- start of the RS(rainy sunday) color palette -->
+  <div class="RSContainer">
+    <div class="RSColor">
+      <img src="files/rainysundaypalette.jpg" style="width: 50%; height: 50%;">
+      <button id="dropdownRS" onclick="RSShow()">See The Comics</button>
+    </div>
+    <div class="RSHidden">
+      <p class="text"><i>My Favorite Things About Ohio Winter</i></p>
+      <img src="files/CT_RS_ohiowinter_FB.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>What Middle School Looked Like For...</i></p>
+      <img src="files/CT_RS_middleschool_fb.jpg" style="width: 50%; height: 50%;">
+      <p class="text"><i>Wishing of...</i></p>
+      <img src="files/CT_RS_wishingof_FB.jpg" style="width: 75%; height: 75%;">
+      <button id="closeRS" onclick="RSHide()">Hide The Comics</button>
+    </div>
+  </div>
+
+  <!-- start of the LV(La Dolce Vita) color palette -->
+  <div class="LVContainer">
+    <div class="LVColor">
+      <img src="files/rainysundaypalette.jpg" style="width: 50%; height: 50%;">
+      <button id="dropdownLV" onclick="LVShow()">See The Comics</button>
+    </div>
+    <div class="LVHidden">
+      <p class="text">Coming Soon!</p>
+      <button id="closeLV" onclick="LVHide()">Hide The Comics</button>
+    </div>
+  </div>
+  <script>
+    // the sydney color palette
+    const SKHid = document.querySelector(".SKHidden")
+    function SKShow(){
+      SKHid.style.display = "block"
+    }
+    function SKHide(){
+      SKHid.style.display = "none"
+    }
+
+    //the florida citrus color palette
+    const FCHid = document.querySelector(".FCHidden")
+    function FCShow(){
+      FCHid.style.display = "block"
+    }
+    function FCHide(){
+      FCHid.style.display = "none"
+    }
+
+    //the rainy sunday color palette
+    const RSHid = document.querySelector(".RSHidden")
+    function RSShow(){
+      RSHid.style.display = "block"
+    }
+    function RSHide(){
+      RSHid.style.display = "none"
+    }
+
+    //the la dolce vita color palette
+    const LVHid = document.querySelector(".LVHidden")
+    function LVShow(){
+      LVHid.style.display = "block"
+    }
+    function LVHide(){
+      LVHid.style.display = "none"
+    }
+  </script>
+</body>
+</html>

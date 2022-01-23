@@ -33,29 +33,37 @@
       text-decoration-color: #BBD5F2;
       color: black}
    
+    
       /* Regular Text */
-     @media only screen and (max-width: 600px) {
+     @media only screen and (min-width: 500px) {
          .text{font-size: 20px;}
+         .icon{width:35%};
        }
+       
        
        /* Small devices (portrait tablets and large phones, 600px and up) */
        @media only screen and (min-width: 600px) {
          .text{font-size: 20px;}
+         .icon{width:45%};
+
        }
        
        /* Medium devices (landscape tablets, 768px and up) */
        @media only screen and (min-width: 768px) {
          .text{font-size: 25px;}
+         .icon{width:55%};
        } 
        
        /* Large devices (laptops/desktops, 992px and up) */
        @media only screen and (min-width: 992px) {
          .text{font-size: 30px;}
+         .icon{width:75%};
        } 
        
        /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
-         .text{font-size: 35px;} }
+         .text{font-size: 35px;}
+         .icon{width:100%}; }
 
 
          /* Headers */
@@ -109,3 +117,5 @@
             /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
               .titletext{font-size: 60px;} }
+
+    
