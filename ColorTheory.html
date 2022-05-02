@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="../navbar.css">
 <link rel="stylesheet" href="../dropdown.css">
 
-<body style="text-align: center;">
+<body style="margin: 0px;">
   <div class="navbar">
     <a href="../index.html"><img src="../img/SK_logo2.png" width="100%" height="100%"> </a> 
     <a href="../about.html">About</a> 
@@ -15,7 +15,7 @@
    <a href="https://www.etsy.com/shop/SydneyKit?ref=search_shop_redirect">Shop</a>
    <a href="../contact.html">Contact</a>
   </div>
-      <br  id="anchor1">   <div style="margin-right: 5%; margin-left: 5%;">
+      <br id="anchor1">   <div style="margin-right: 5%; margin-left: 5%; text-align: center;">
       <p class="titletext" style="margin-bottom: 0px; margin-top: 8%;"><i>Color Theory</i></p>
      <video autoplay  muted looped src="files/ColorTheory_Intro_NoMusic.mp4" style="width: 25%; height: 25%;"></video>
       <br>
@@ -46,7 +46,8 @@
       <button id="closeSK" onclick="SKHide()">Hide The Comics</button>
     </div>
   </div>
-
+<br>
+<br>
   <!-- Start of the FC(Florida Citrus) Palette -->
   <div class="FCContainer">
     <div class="FCColor">
@@ -63,7 +64,8 @@
       <button id="closeFC" onclick="FCHide()">Hide The Comics</button>
     </div>
   </div>
-
+  <br>
+  <br>
   <!-- start of the RS(rainy sunday) color palette -->
   <div class="RSContainer">
     <div class="RSColor">
@@ -80,19 +82,99 @@
       <button id="closeRS" onclick="RSHide()">Hide The Comics</button>
     </div>
   </div>
-
+  <br>
+  <br>
   <!-- start of the LV(La Dolce Vita) color palette -->
   <div class="LVContainer">
     <div class="LVColor">
-      <img src="files/rainysundaypalette.jpg" style="width: 50%; height: 50%;">
+      <img src="files/Ladolchevida_palette.jpg" style="width: 50%; height: 50%;">
       <button id="dropdownLV" onclick="LVShow()">See The Comics</button>
     </div>
     <div class="LVHidden">
-      <p class="text">Coming Soon!</p>
+      <p class="text"><i>Finally A Teenager</i></p>
+      <img src="files/CT_LDV_teenager_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>Depression</i></p>
+      <img src="files/CT_LDV_depression_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>A Tribue To Ice Cream</i></p>
+      <img src="files/CT_LDV_icecream_full.jpg" style="width: 75%; height: 75%;">
       <button id="closeLV" onclick="LVHide()">Hide The Comics</button>
     </div>
   </div>
+  <br>
+  <br>
+   <!-- start of the IL(Ivy League) color palette -->
+   <div class="ILContainer">
+    <div class="ILColor">
+      <img src="files/ivyleague_palette.jpg" style="width: 50%; height: 50%;">
+      <button id="dropdownIL" onclick="ILShow()">See The Comics</button>
+    </div>
+    <div class="ILHidden">
+      <p class="text"><i>Camping Hero</i></p>
+      <img src="files/CT_IL_camping_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>Hiking In Summer V Winter</i></p>
+      <img src="files/CT_IV_hiking_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>My Style</i></p>
+      <img src="files/CT_IV_style_full.jpg" style="width: 75%; height: 75%;">
+      <button id="closeIL" onclick="ILHide()">Hide The Comics</button>
+    </div>
+  </div>
+  <br>
+  <br>
+<!-- start of the HSH (Home Sweet Home) color palette -->
+   <div class="HSHContainer">
+    <div class="HSHColor">
+      <img src="files/homesweethome_palette.jpg" style="width: 50%; height: 50%;">
+      <button id="dropdownHSH" onclick="HSHShow()">See The Comics</button>
+    </div>
+    <div class="HSHHidden">
+      <p class="text"><i>How To Make Key Lime Pie</i></p>
+      <img src="files/CT_SP_pies_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>Easter Then V Now</i></p>
+      <img src="files/CT_SP_easter_full.jpg" style="width: 50%; height: 50%;">
+      <p class="text"><i>Kitchen Remodeling</i></p>
+      <img src="files/CT_SP_kitchen_full.png" style="width: 75%; height: 75%;">
+      <button id="closeHSH" onclick="HSHHide()">Hide The Comics</button>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- start of the Island Cruise (IC) color palette -->
+  <div class="ICContainer">
+    <div class="ICColor">
+      <img src="files/islandcruise_palette.jpg" style="width: 50%; height: 50%;">
+      <button id="dropdownIC" onclick="ICShow()">See The Comics</button>
+    </div>
+    <div class="ICHidden">
+      <p class="text"><i>Swimming Pool Mermaid</i></p>
+      <img src="files/CT_IC_mermaid_full.png" style="width: 75%; height: 75%;">
+      <p class="text"><i>Why I Bought It</i></p>
+      <img src="files/CT_IC_bought_full.jpg" style="width: 75%; height: 75%;">
+      <p class="text"><i>Vacation Schedule</i></p>
+      <img src="files/CT_IC_vacation_full.jpg" style="width: 75%; height: 75%;">
+      <button id="closeIC" onclick="ICHide()">Hide The Comics</button>
+    </div>
+  </div>
+  <br>
+  <br>
+    <!-- start of the Pup Tent (PT) color palette -->
+    <div class="PTContainer">
+      <div class="PTColor">
+        <img src="files/puptent_palette.jpg" style="width: 50%; height: 50%;">
+        <button id="dropdownPT" onclick="PTShow()">See The Comics</button>
+      </div>
+      <div class="PTHidden">
+        <p class="text"><i>Things In My Apartment That Just Make Sense: TikTok Trend</i></p>
+        <img src="files/CT_PT_makesense_full.jpg" style="width: 75%; height: 75%;">
+        <p class="text"><i>Forbidden Starbucks</i></p>
+        <img src="files/CT_PT_forbidden_full.jpg" style="width: 50%; height: 50%;">
+        <p class="text"><i>My Past Life</i></p>
+        <img src="files/CT_PT_pastlife_full.jpg" style="width: 50%; height: 50%;">
+        <button id="closePT" onclick="PTHide()">Hide The Comics</button>
+      </div>
+    </div>
+
   <script>
+
     // the sydney color palette
     const SKHid = document.querySelector(".SKHidden")
     function SKShow(){
@@ -128,6 +210,49 @@
     function LVHide(){
       LVHid.style.display = "none"
     }
+
+      //the ivy league color palette
+      const ILHid = document.querySelector(".ILHidden")
+    function ILShow(){
+      ILHid.style.display = "block"
+    }
+    function ILHide(){
+      ILHid.style.display = "none"
+    }
+
+      //the home sweet home color palette
+      const HSHHid = document.querySelector(".HSHHidden")
+    function HSHShow(){
+      HSHHid.style.display = "block"
+    }
+    function HSHHide(){
+      HSHHid.style.display = "none"
+    }
+
+       //the island cruise palette
+       const ICHid = document.querySelector(".ICHidden")
+    function ICShow(){
+      ICHid.style.display = "block"
+    }
+    function ICHide(){
+      ICHid.style.display = "none"
+    }
+
+    
+       //the pup tent palette
+       const PTHid = document.querySelector(".PTHidden")
+    function PTShow(){
+      PTHid.style.display = "block"
+    }
+    function PTHide(){
+      PTHid.style.display = "none"
+    }
+
+
   </script>
+  <br>
+  <br>
+  <br>
+  <p class="text"><a href="#anchor1">Back To The Top</a></p>
 </body>
 </html>

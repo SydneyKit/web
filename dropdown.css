@@ -110,3 +110,114 @@
 #closeLV{
     font-size:1.5vw;
 }
+/* the Ivy League (IL) palette */
+.ILContainer{
+   
+}
+.ILColor{
+    text-align: center;
+}
+.ILColor img{
+    display:block;
+    margin:0 auto;
+}
+.ILHidden{
+    display:none;
+    text-align:center;
+}
+.ILHidden img{
+    display: block;
+    margin:0 auto;
+}
+#dropdownIL{
+    font-size:1.75vw;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+#closeIL{
+    font-size:1.5vw;
+}
+
+/* the Home Sweet Home (HSH) palette */
+.HSHContainer{
+   
+}
+.HSHColor{
+    text-align: center;
+}
+.HSHColor img{
+    display:block;
+    margin:0 auto;
+}
+.HSHHidden{
+    display:none;
+    text-align:center;
+}
+.HSHHidden img{
+    display: block;
+    margin:0 auto;
+}
+#dropdownHSH{
+    font-size:1.75vw;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+#closeHSH{
+    font-size:1.5vw;
+}
+
+/* the Island Cruise (IC) palette */
+.ICContainer{
+   
+}
+.ICColor{
+    text-align: center;
+}
+.ICColor img{
+    display:block;
+    margin:0 auto;
+}
+.ICHidden{
+    display:none;
+    text-align:center;
+}
+.ICHidden img{
+    display: block;
+    margin:0 auto;
+}
+#dropdownIC{
+    font-size:1.75vw;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+#closeIC{
+    font-size:1.5vw;
+}
+
+/* the Pup Tent (PT) palette */
+.PTContainer{
+   
+}
+.PTColor{
+    text-align: center;
+}
+.PTColor img{
+    display:block;
+    margin:0 auto;
+}
+.PTHidden{
+    display:none;
+    text-align:center;
+}
+.PTHidden img{
+    display: block;
+    margin:0 auto;
+}
+#dropdownPT{
+    font-size:1.75vw;
+    margin-top:15px;
+    margin-bottom:20px;
+}
+#closePT{
+    font-size:1.5vw;
+}
