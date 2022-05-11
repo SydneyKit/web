@@ -1,25 +1,76 @@
 
 <!DOCTYPE html>
 <html>
-<title>Webcomics</title>
+<title>Volume Two</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="../text.css">
 <link rel="stylesheet" href="../navbar.css">
 
-<body style="font-size: 30px; text-align: center;">
+<body style="font-size: 60px; text-align: center;">
     <div class="navbar">
-        <a href="../home.html"><img src="../img/SK_logo2.png" width="81" height="45.6"> </a> 
-        <a href="../about.html" style="font-size: 40px;">About</a> 
-        <a href="../portfolio.html" style="font-size: 40px;">Portfolio</a>
-       <a href="../Collections/index.html" style="font-size: 40px;">Collections</a> 
-       <a href="../contact.html" style="font-size: 40px;">Contact</a>
+        <a href="../index.html"><img src="../img/SK_logo2.png" width="81" height="45.6"> </a> 
+        <a href="../about.html">About</a> 
+        <a href="../portfolio.html">Portfolio</a>
+        <a href="../blog/index.html">Blog</a>  
+       <a href="../shop.html">Shop</a>
+       <a href="../contact.html">Contact</a>
       </div>
       <br>
-      <br>
-<p>Digital Access to Love, Me Volume 2</p>
-<p>Coming soon!</p>
-
+<p>Digital Access to <i>Love, Me</i> Volume Two</p>
+<br>
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="../img/0001.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0002.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0003.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0004.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0005.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0006.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0007.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0008.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0009.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0010.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0011.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0012.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0013.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0014.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0015.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0016.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0017.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0018.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0019.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0020.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0021.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0022.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0023.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0024.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0025.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0026.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0027.jpg" style="width:50%; margin-left: 25%">
+    <img class="mySlides" src="../img/0028.jpg" style="width:50%; margin-left: 25%">
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+  </script>
 <br>
 <br>
 
