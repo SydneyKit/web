@@ -37,7 +37,8 @@
       /* Regular Text */
      @media only screen and (min-width: 500px) {
          .text{font-size: 20px;}
-         .icon{width:35%};
+         .icon{width:25%};
+         .section{width: auto height: 100%;};
        }
        
        
@@ -45,27 +46,29 @@
        @media only screen and (min-width: 600px) {
          .text{font-size: 20px;}
          .icon{width:45%};
-
+         .section{width: auto height: 100%;};
        }
        
        /* Medium devices (landscape tablets, 768px and up) */
        @media only screen and (min-width: 768px) {
          .text{font-size: 25px;}
-         .icon{width:55%};
+         .icon{width:55%}
+         .section{width: auto height: 100%;}
        } 
        
        /* Large devices (laptops/desktops, 992px and up) */
        @media only screen and (min-width: 992px) {
          .text{font-size: 30px;}
-         .icon{width:75%};
+         .icon{width:75%}
+         .section{width: auto height: 100%;}
        } 
        
        /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {
          .text{font-size: 35px;}
-         .icon{width:100%}; }
-
-
+         .icon{width:100%;} 
+         .section{width: auto height: 100%;}
+}
          /* Headers */
 
          @media only screen and (max-width: 600px) {
