@@ -22,14 +22,25 @@
 .navtext{
   padding:0%
 }
+.button{
+  display: block;
+  border-radius: 8px;
+  padding: 14px 40px;
+  border-color: white;
+  text-align: center;
+  width: 25%;
+  font-size:x-large
+}
+.button:hover {
+  box-shadow: 0 10px 15px 0 rgb(255, 255, 255), 0 10px 25px 0 rgba(0,0,0,0.19);}
  
    a:link{
-      text-decoration: underline;
+      text-decoration: none;
       text-decoration-color: #BBD5F2;
       color: black}
   
    a:visited{
-      text-decoration: underline;
+      text-decoration: none;
       text-decoration-color: #BBD5F2;
       color: black}
    
@@ -38,7 +49,7 @@
      @media only screen and (min-width: 500px) {
          .text{font-size: 20px;}
          .icon{width:25%};
-         .section{width: auto height: 100%;};
+         .section{width: auto; height: 100%;};
        }
        
        
